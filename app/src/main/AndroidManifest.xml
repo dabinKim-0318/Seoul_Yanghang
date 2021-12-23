@@ -10,7 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SeoulYanghang">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.user.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.login.signup.SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.SeoulYanghang.NoActionBar" />
+        <activity
+            android:name=".ui.user.MainActivitydddd"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.signup.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.login.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivityvx"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
