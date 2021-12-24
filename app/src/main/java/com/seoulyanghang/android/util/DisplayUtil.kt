@@ -2,7 +2,7 @@ package com.seoulyanghang.android.util
 
 import android.app.Application
 import androidx.annotation.Px
-import com.seoulyanghang.android.SeoulYanhanApplication
+import com.seoulyanghang.android.SeoulYanghangApplication
 import kotlin.math.roundToInt
 
 
@@ -29,13 +29,13 @@ class PixelRatio(private val app: Application) {
 }
 
 val Number.pixel: Int
-    @Px get() = SeoulYanhanApplication.pixelRatio.toDP(this.toInt())
+    @Px get() = SeoulYanghangApplication.pixelRatio.toDP(this.toInt())
 
 val Number.dp: Int
-    get() = SeoulYanhanApplication.pixelRatio.toPixel(this.toInt())
+    get() = SeoulYanghangApplication.pixelRatio.toPixel(this.toInt())
 
 val Number.pixelFloat: Float
-    @Px get() = SeoulYanhanApplication.pixelRatio.toDP(this.toInt()).toFloat()
+    @Px get() = SeoulYanghangApplication.pixelRatio.toDP(this.toInt()).toFloat()
 
 val Number.dpFloat: Float
-    get() = SeoulYanhanApplication.pixelRatio.toPixel(this.toInt()).toFloat()
+    get() = SeoulYanghangApplication.pixelRatio.toPixel(this.toInt()).toFloat()

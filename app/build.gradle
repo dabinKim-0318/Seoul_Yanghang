@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt' //kapt사용
+    id 'kotlin-android-extensions' //Hilt
+    id 'dagger.hilt.android.plugin' //Hilt
 }
 
 android {

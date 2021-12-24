@@ -5,7 +5,7 @@ import com.seoulyanghang.android.util.PixelRatio
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class SeoulYanhanApplication : Application() {
+class SeoulYanghangApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         initPixelUtil()

@@ -1,4 +1,4 @@
-package com.seoulyanghang.android.ui.shoppingbasket
+package com.seoulyanghang.android.ui.shoppingbasket.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
