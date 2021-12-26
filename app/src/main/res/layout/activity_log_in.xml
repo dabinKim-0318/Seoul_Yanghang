@@ -12,6 +12,143 @@
         android:layout_height="match_parent"
         tools:context=".ui.login.view.LogInActivity">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/tv_login_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_medium"
+            android:paddingVertical="4dp"
+            android:text="로그인"
+            android:textColor="@color/main_brown"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/iv_login_topline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_lgin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_login_Title"
+            app:layout_constraintStart_toStartOf="@+id/txtlayout_login_email"
+            app:layout_constraintTop_toTopOf="@id/tv_login_Title"
+            app:srcCompat="@drawable/ic_login_back" />
+
+        <ImageView
+            android:id="@+id/iv_login_topline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_login_Title"
+            app:srcCompat="@drawable/ic_login_top_line"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtlayout_login_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="40dp"
+            android:textColorHint="@color/middle_grey"
+            app:boxStrokeColor="@color/main_brown"
+            app:hintTextColor="@color/main_brown"
+            app:layout_constraintTop_toBottomOf="@id/iv_login_topline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editxt_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/noto_light"
+                android:hint="이메일"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/main_brown" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtlayout_login_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/middle_grey"
+            app:boxStrokeColor="@color/main_brown"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/pale_grey"
+            app:hintTextColor="@color/main_brown"
+            app:layout_constraintEnd_toEndOf="@id/txtlayout_login_email"
+            app:layout_constraintStart_toStartOf="@id/txtlayout_login_email"
+            app:layout_constraintTop_toBottomOf="@id/txtlayout_login_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editxt_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/noto_light"
+                android:hint="비밀번호"
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="@color/pale_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/main_red"
+            android:includeFontPadding="false"
+            android:text="로그인"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/txtlayout_login_password"
+            app:layout_constraintStart_toStartOf="@id/txtlayout_login_password"
+            app:layout_constraintTop_toBottomOf="@id/txtlayout_login_password" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/login_login_button"
+            app:layout_constraintStart_toStartOf="@id/login_login_button"
+            app:layout_constraintTop_toBottomOf="@id/login_login_button">
+
+            <TextView
+                android:id="@+id/tv_login_signup"
+                style="@style/login_register_text"
+                android:layout_marginEnd="16dp"
+                android:text="회원가입" />
+
+            <TextView
+                style="@style/login_register_text"
+                android:layout_marginEnd="16dp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tv_login_find_id"
+                style="@style/login_register_text"
+                android:layout_marginEnd="16dp"
+                android:text="아이디 찾기" />
+
+            <TextView
+                style="@style/login_register_text"
+                android:layout_marginEnd="16dp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tv_login_find_password"
+                style="@style/login_register_text"
+                android:text="비밀번호 찾기" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
