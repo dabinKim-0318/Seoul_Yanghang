@@ -1,3 +1,12 @@
-<resources>
-    <dimen name="fab_margin">16dp</dimen>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_active_item_max_width" tools:override="true">250dp</dimen>
+    아이템간 가로 간격
+    <dimen name="design_bottom_navigation_height" tools:override="true">36dp</dimen>
+    전체 네비게이션 높이
+  <!--  <dimen name="design_bottom_navigation_margin" tools:override="true">2dp</dimen>-->
+    텍스트와 아이템 간 세로 간격
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <!--    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10dp</dimen>-->
+    텍스트 크기
 </resources>
