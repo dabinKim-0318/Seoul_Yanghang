@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main_home"
+        android:title="메인화면" />
+    <item
+        android:id="@+id/menu_main_love_item"
+        android:title="찜한상품" />
+    <item
+        android:id="@+id/menu_main_recent_item"
+        android:title="최근본상품" />
+    <item
+        android:id="@+id/menu_main_item_inquiry"
+        android:title="상품문의" />
+
+</menu>

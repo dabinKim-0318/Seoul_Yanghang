@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--로그인 하단 3개-->
     <style name="login_register_text">
         <item name="android:textColor">@color/main_brown</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">@font/noto_medium</item>
+        <item name="android:fontFamily">@font/noto_light</item>
         <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--bottom navigation 커스터마이징-->
+    <style name="main_bottom_navigation" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/noto_light</item>
     </style>
 </resources>

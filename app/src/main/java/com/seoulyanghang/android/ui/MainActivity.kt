@@ -1,16 +1,31 @@
 package com.seoulyanghang.android.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.seoulyanghang.android.R
 import com.seoulyanghang.android.base.BaseViewUtil
 import com.seoulyanghang.android.databinding.ActivityMainBinding
+import com.seoulyanghang.android.ui.user.login.view.LogInActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : BaseViewUtil.BaseAppCompatActivity<ActivityMainBinding>(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setNavigation()
+
+
+
+    }
+
+    private fun setNavigation() {
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fcv_main) as NavHostFragment
+        val navController = navHostFragment.findNavController()
+        binding.bnvMain.setupWithNavController(navController)
+        binding.bnvMain.isItemHorizontalTranslationEnabled = true
     }
 }

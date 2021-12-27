@@ -11,4 +11,7 @@
     <font
         android:font="@font/noto_light"
         android:fontStyle="normal" />
+    <font
+        android:font="@font/noto_bold"
+        android:fontStyle="normal" />
 </font-family>
