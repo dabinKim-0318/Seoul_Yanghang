@@ -5,27 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentActivity
 import com.seoulyanghang.android.R
 import com.seoulyanghang.android.base.BaseViewUtil
 import com.seoulyanghang.android.databinding.FragmentHomeBinding
-import com.seoulyanghang.android.databinding.FragmentItemInquiryBinding
+import com.seoulyanghang.android.databinding.FragmentSecondAdBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment : BaseViewUtil.BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
+class SecondAdFragment : BaseViewUtil.BaseFragment<FragmentSecondAdBinding>(R.layout.fragment_second_ad) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        setViewPagerAdapter(requireActivity())
-    }
-
-    //ViewPager연결
-    fun setViewPagerAdapter(fragmentActivity: FragmentActivity) {
-        val viewPagerAdapter = AdViewPagerAdapter(fragmentActivity)
-        binding.vpHome.apply {
-            adapter = viewPagerAdapter
-        }
     }
 }
