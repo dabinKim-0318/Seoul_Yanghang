@@ -12,7 +12,129 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <ImageView
+                android:id="@+id/iv_home_bg_search"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/rectangle_home_search_brawn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_home_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_home_search"
+                android:fontFamily="@font/noto_light"
+                android:hint="원하시는 상품을 검색해보세요."
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:textColor="@color/main_brown"
+                android:textColorHint="@color/main_brown"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_home_bg_search"
+                app:layout_constraintEnd_toEndOf="@+id/iv_home_bg_search"
+                app:layout_constraintStart_toStartOf="@+id/iv_home_bg_search"
+                app:layout_constraintTop_toTopOf="@+id/iv_home_bg_search"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/iv_home_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/et_home_search"
+                app:layout_constraintEnd_toEndOf="@+id/et_home_search"
+                app:layout_constraintTop_toTopOf="@+id/et_home_search"
+                app:srcCompat="@drawable/ic_home_search" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ct_home_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/cl_home_top">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_home_ad_background"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="304dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/rectangle_home_ad_grey"
+                app:layout_constraintBottom_toBottomOf="@+id/vp_home"
+                app:layout_constraintEnd_toEndOf="@+id/vp_home"
+                app:layout_constraintStart_toStartOf="@+id/vp_home"
+                app:layout_constraintTop_toTopOf="@+id/vp_home"
+                app:layout_constraintVertical_bias="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/iv_home_ad_background"
+                app:layout_constraintEnd_toEndOf="@+id/iv_home_ad_background"
+                app:layout_constraintStart_toStartOf="@id/iv_home_ad_background"
+                app:layout_constraintTop_toTopOf="@id/iv_home_ad_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_home_current_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:theme="@style/home_ad_pagae" />
+
+                    <TextView
+                        android:id="@+id/tv_home_page_divide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="/"
+                        android:theme="@style/home_ad_pagae" />
+
+                    <TextView
+                        android:id="@+id/tv_home_all_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="3"
+                        android:theme="@style/home_ad_pagae" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ct_home_middle" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
