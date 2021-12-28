@@ -6,9 +6,13 @@
 
     <data>
 
+        <variable
+            name="homeViewModel"
+            type="com.seoulyanghang.android.ui.home.viewmodel.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

@@ -11,14 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SeoulYanghang">
         <activity
-            android:name=".ui.home.view.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.user.MainActivityffffff"
-            android:exported="false" />
-        <activity
             android:name=".ui.user.login.view.LogInActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.user.signup.view.SignUpActivity"
             android:exported="false" />
