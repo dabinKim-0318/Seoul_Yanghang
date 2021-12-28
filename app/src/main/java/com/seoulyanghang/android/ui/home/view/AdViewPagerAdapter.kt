@@ -6,17 +6,14 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class AdViewPagerAdapter(private val fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
 
-    override fun getItemCount() = AD_PAGE_NUM
+    override fun getItemCount() = Int.MAX_VALUE
 
     override fun createFragment(position: Int): Fragment {
-        return when (position) {
+        return when (position % 3) {
             0 -> FirstAdFragment()
             1 -> SecondAdFragment()
             2 -> ThirdAdFragment()
             else -> FirstAdFragment()
         }
-    }
-    companion object {
-        const val AD_PAGE_NUM = 3
     }
 }
