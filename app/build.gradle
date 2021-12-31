@@ -3,7 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt' //kapt사용
     id 'kotlin-android-extensions' //Hilt
-    id 'dagger.hilt.android.plugin' //Hilt
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'//Hilt
 }
 
 android {
@@ -58,6 +59,8 @@ dependencies {
     //LifeCycle
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
     androidTestImplementation "androidx.arch.core:core-testing:$arch_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.0"
     implementation "androidx.fragment:fragment-ktx:1.4.0"
