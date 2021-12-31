@@ -2,7 +2,7 @@
 <resources>
 
     <!--로그인 하단 3개-->
-    <style name="login_register_text">
+    <style name="tv_login_register_text">
         <item name="android:textColor">@color/main_brown</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
