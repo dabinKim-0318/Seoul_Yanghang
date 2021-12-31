@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.home.view.HomeFragment">
+    tools:context=".presentation.ui.home.view.HomeFragment">
 
     <data>
 
         <variable
             name="homeViewModel"
-            type="com.seoulyanghang.android.ui.home.viewmodel.HomeViewModel" />
+            type="com.seoulyanghang.android.presentation.ui.home.viewmodel.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
