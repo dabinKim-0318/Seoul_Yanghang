@@ -1,7 +1,7 @@
 package com.seoulyanghang.android
 
 import android.app.Application
-import com.seoulyanghang.android.util.PixelRatio
+import com.seoulyanghang.android.presentation.util.PixelRatio
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp

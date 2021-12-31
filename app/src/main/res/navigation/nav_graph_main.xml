@@ -6,22 +6,22 @@
     app:startDestination="@id/menu_main_home">
     <fragment
         android:id="@+id/menu_main_home"
-        android:name="com.seoulyanghang.android.ui.home.view.HomeFragment"
+        android:name="com.seoulyanghang.android.presentation.ui.home.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/menu_main_love_item"
-        android:name="com.seoulyanghang.android.ui.loveitem.view.LoveItemFragment"
+        android:name="com.seoulyanghang.android.presentation.ui.loveitem.view.LoveItemFragment"
         android:label="fragment_love_item"
         tools:layout="@layout/fragment_love_item" />
     <fragment
         android:id="@+id/menu_main_recent_item"
-        android:name="com.seoulyanghang.android.ui.recentitem.view.RecentItemFragment"
+        android:name="com.seoulyanghang.android.presentation.ui.recentitem.view.RecentItemFragment"
         android:label="fragment_recent_item"
         tools:layout="@layout/fragment_recent_item" />
     <fragment
         android:id="@+id/menu_main_item_inquiry"
-        android:name="com.seoulyanghang.android.ui.iteminquiry.view.ItemInquiryFragment"
+        android:name="com.seoulyanghang.android.presentation.ui.iteminquiry.view.ItemInquiryFragment"
         android:label="fragment_item_inquiry"
         tools:layout="@layout/fragment_item_inquiry" />
 </navigation>
